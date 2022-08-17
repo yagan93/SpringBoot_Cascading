@@ -34,12 +34,4 @@ public class OrderingServiceImpl implements OrderingService {
     public List<Ordering> findAll() {
         return orderingRepository.findAll();
     }
-
-    private Ordering findOrThrow(Optional<Ordering> optional) throws NoSuchElementException {
-        if (optional.isPresent()) {
-            return optional.get();
-        } else {
-            throw new NoSuchElementException("No value present");
-        }
-    }
 }
