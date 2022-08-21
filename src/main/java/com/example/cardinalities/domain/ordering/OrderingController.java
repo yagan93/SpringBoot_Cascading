@@ -20,7 +20,7 @@ public class OrderingController {
 
     @PostMapping
     public ResponseEntity<Ordering> create(@RequestBody Ordering ordering) {
-        return new ResponseEntity<>(orderingService.save(ordering), HttpStatus.OK);
+        return new ResponseEntity<>(orderingService.save(ordering), HttpStatus.CREATED);
     }
 
     @GetMapping
