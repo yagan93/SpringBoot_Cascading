@@ -1,4 +1,4 @@
-package com.example.cardinalities.domain.order;
+package com.example.cardinalities.domain.ordering;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

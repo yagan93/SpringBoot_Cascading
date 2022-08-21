@@ -1,6 +1,6 @@
 package com.example.cardinalities.domain.orderingposition;
 
-import com.example.cardinalities.domain.order.Ordering;
+import com.example.cardinalities.domain.ordering.Ordering;
 import com.example.cardinalities.domain.product.Product;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.GenericGenerator;

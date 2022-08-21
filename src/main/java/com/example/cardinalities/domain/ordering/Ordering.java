@@ -1,4 +1,4 @@
-package com.example.cardinalities.domain.order;
+package com.example.cardinalities.domain.ordering;
 
 import com.example.cardinalities.domain.orderingposition.OrderingPosition;
 import org.hibernate.annotations.GenericGenerator;

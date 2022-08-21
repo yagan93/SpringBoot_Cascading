@@ -1,4 +1,4 @@
-package com.example.cardinalities.domain.order;
+package com.example.cardinalities.domain.ordering;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

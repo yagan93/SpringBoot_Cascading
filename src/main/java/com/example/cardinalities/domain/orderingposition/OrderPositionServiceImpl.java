@@ -16,7 +16,7 @@ public class OrderPositionServiceImpl implements OrderingPositionService {
     }
 
     @Override
-    public List<OrderingPosition> saveAll(List<OrderingPosition> orderingPositions) {
-        return orderingPositionRepository.saveAll(orderingPositions);
+    public List<OrderingPosition> findAll() {
+        return orderingPositionRepository.findAll();
     }
 }

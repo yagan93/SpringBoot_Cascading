@@ -1,4 +1,4 @@
-package com.example.cardinalities.domain.order;
+package com.example.cardinalities.domain.ordering;
 
 import com.example.cardinalities.domain.orderingposition.OrderingPosition;
 import com.example.cardinalities.domain.orderingposition.OrderingPositionService;
@@ -13,12 +13,10 @@ import java.util.stream.Collectors;
 public class OrderingServiceImpl implements OrderingService {
 
     private final OrderingRepository orderingRepository;
-    private final OrderingPositionService orderingPositionService;
 
     @Autowired
-    public OrderingServiceImpl(OrderingRepository orderingRepository, OrderingPositionService orderingPositionService) {
+    public OrderingServiceImpl(OrderingRepository orderingRepository) {
         this.orderingRepository = orderingRepository;
-        this.orderingPositionService = orderingPositionService;
     }
 
     @Override
