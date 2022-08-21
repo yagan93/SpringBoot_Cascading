@@ -20,12 +20,12 @@ public class ProductController {
 
 
     @GetMapping
-    public ResponseEntity<List<Product>> findAllProducts() {
+    public ResponseEntity<List<Product>> retrieveAll() {
         return new ResponseEntity<>(productService.findAll(), HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity<Product> saveProduct(@RequestBody Product product) {
+    public ResponseEntity<Product> create(@RequestBody Product product) {
         return new ResponseEntity<>(productService.save(product), HttpStatus.OK);
     }
 }

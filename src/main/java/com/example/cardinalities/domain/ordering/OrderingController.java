@@ -19,12 +19,12 @@ public class OrderingController {
     }
 
     @PostMapping
-    public ResponseEntity<Ordering> saveOrdering(@RequestBody Ordering ordering) {
+    public ResponseEntity<Ordering> create(@RequestBody Ordering ordering) {
         return new ResponseEntity<>(orderingService.save(ordering), HttpStatus.OK);
     }
 
     @GetMapping
-    public ResponseEntity<List<Ordering>> findAllOrdering() {
+    public ResponseEntity<List<Ordering>> retrieveAll() {
         return new ResponseEntity<>(orderingService.findAll(), HttpStatus.OK);
     }
 }

@@ -21,7 +21,7 @@ public class OrderingPositionController {
     }
 
     @GetMapping
-    public ResponseEntity<List<OrderingPosition>> findAllOrderingPositions () {
+    public ResponseEntity<List<OrderingPosition>> retrieveAll () {
         return new ResponseEntity<>(orderingPositionService.findAll(), HttpStatus.OK);
     }
 }
