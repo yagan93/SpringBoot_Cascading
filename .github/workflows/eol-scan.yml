@@ -1,0 +1,22 @@
+name: End of Life Dependency Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  eol-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run eol-check
+        uses: docker://ghcr.io/mheap/eol-check:latest
