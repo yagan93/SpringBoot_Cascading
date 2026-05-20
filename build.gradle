@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
+	// explicitly added an EOL dependency (Spring Core 4.3.x is End-of-Life) to test the eol-scan pipeline
+	implementation group: 'org.springframework', name: 'spring-core', version: '4.3.30.RELEASE'
+	
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.7.3'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.3'
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.4.0'
